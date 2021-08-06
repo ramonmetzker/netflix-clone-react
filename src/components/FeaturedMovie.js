@@ -1,5 +1,6 @@
 import React from "react";
 import "./FeaturedMovie.css";
+import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default ({ item }) => {
@@ -36,7 +37,8 @@ export default ({ item }) => {
             <div className="featured--description">{description}</div>
             <div className="featured--buttons">
               <a className="featured--watchbutton" href={`/watch/${item.id}`}>
-                ▶ Assistir
+                <PlayArrowIcon style={{ fontSize: 18, lineHeight: 18 }} />{" "}
+                Assistir
               </a>
               <a
                 className="featured--mylistbutton"
